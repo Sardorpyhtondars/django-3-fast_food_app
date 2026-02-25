@@ -1,8 +1,8 @@
 from django.urls import path
 
-from shared.views import home_page_view
+from shared import views
 
 app_name = 'shared'
 urlpatterns = [
-    path('', home_page_view, name='home'),
+    path('', views.home_page_view, name='home'),
 ]
